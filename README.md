@@ -1,21 +1,36 @@
-# SQL Security Auditing & Threat Hunting 📊
+# SQL Security Auditing & Digital Forensics Toolkit
 
-This repository demonstrates how to use SQL for cybersecurity auditing, forensic data analysis, and proactive threat detection.
+**SQL Scripts and Database Schemas for Security Auditing, Threat Hunting, and Digital Forensics**
 
-## 🛡️ Project Overview
-In a real-world Security Operations Center (SOC), analysts query large databases (SIEMs) to find traces of malicious activity. This project simulates that environment by:
-1. Setting up a relational database with users and access logs.
-2. Executing targeted queries to find brute-force attacks and privilege escalation.
+Repository containing SQL queries and database models focused on detecting suspicious database activity, auditing access, and supporting forensic investigations.
 
-## 📁 Repository Structure
-- **/setup**: Contains `database_setup.sql` to initialize the testing environment.
-- **/scripts**: Contains `security_queries.sql` with documented auditing queries.
+### 🎯 Objective
+Enable security analysts and DBAs to proactively hunt threats, audit user activity, and investigate security incidents directly at the database level.
 
-## 🔍 Key Security Queries
-- **Brute Force Detection**: Identifying IPs with high failure rates.
-- **Privileged Account Audit**: Monitoring 'superuser' activity and stale accounts.
-- **Time-Based Analysis**: Detecting logins during unusual hours (non-business hours).
+### ✨ Key Features
+- User access and privilege auditing queries
+- Detection of anomalous login patterns
+- Data modification and sensitive table monitoring
+- Forensic timeline reconstruction scripts
+- Compliance audit reports (GDPR, ISO 27001 style)
+- Sample vulnerable schema for training purposes
 
-## 🛠️ How to Use
-1. Run the script in `/setup` to create the mock database.
-2. Execute the queries in `/scripts` to see the audit results.
+### 🛠️ Technologies
+- SQL (PostgreSQL / MySQL compatible)
+- Advanced SQL techniques (Window functions, CTEs)
+- Database logging and audit features
+- Python integration examples (optional)
+
+### 🚀 How to Use
+
+```sql
+-- Run security audit
+SELECT * FROM audit_user_privileges();
+
+-- Detect suspicious activity
+SELECT * FROM detect_anomalous_logins();
+
+-- Generate compliance report
+CALL generate_security_audit_report();
+---
+*This repository is part of a specialized portfolio in IT Operations and Cybersecurity, demonstrating the ability to build custom security tooling*.
